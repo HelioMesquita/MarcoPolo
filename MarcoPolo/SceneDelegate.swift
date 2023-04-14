@@ -7,6 +7,29 @@
 
 import UIKit
 
+protocol Coordinator {
+  var childCoordinators: [Coordinator] { get set }
+  var navigationController: UINavigationController { get set }
+
+  func start()
+}
+
+class MainCoordinator: Coordinator {
+  var childCoordinators = [Coordinator]()
+  var navigationController: UINavigationController
+
+  init(navigationController: UINavigationController) {
+    self.navigationController = navigationController
+  }
+
+  func start() {
+    let vc = UIViewController()
+    vc.view.backgroundColor = .white
+    navigationController.pushViewController(vc, animated: false)
+  }
+}
+
+
 extension URL {
   func pages() -> [String] {
     var urlComponents = URLComponents(url: self, resolvingAgainstBaseURL: false)
@@ -109,6 +132,7 @@ final class DeeplinkCoordinator: DeeplinkCoordinatorProtocol {
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+  var coordinator: MainCoordinator?
   var window: UIWindow?
 
   lazy var deeplinkCoordinator: DeeplinkCoordinatorProtocol = {
@@ -132,10 +156,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-    // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-    // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-    guard let _ = (scene as? UIWindowScene) else { return }
+
+    guard let windowScene = (scene as? UIWindowScene) else { return }
+
+    let window = UIWindow(windowScene: windowScene)
+
+    let navController = UINavigationController()
+    coordinator = MainCoordinator(navigationController: navController)
+    coordinator?.start()
+
+    window.rootViewController = navController
+
+    self.window = window
+    window.makeKeyAndVisible()
   }
 
 

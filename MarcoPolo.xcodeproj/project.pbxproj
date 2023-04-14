@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		FDDBB82229E9FFB700CF9102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB82129E9FFB700CF9102 /* AppDelegate.swift */; };
 		FDDBB82429E9FFB700CF9102 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB82329E9FFB700CF9102 /* SceneDelegate.swift */; };
-		FDDBB82629E9FFB700CF9102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB82529E9FFB700CF9102 /* ViewController.swift */; };
-		FDDBB82929E9FFB700CF9102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDBB82729E9FFB700CF9102 /* Main.storyboard */; };
 		FDDBB82B29E9FFB900CF9102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDBB82A29E9FFB900CF9102 /* Assets.xcassets */; };
 		FDDBB82E29E9FFB900CF9102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDBB82C29E9FFB900CF9102 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +17,6 @@
 		FDDBB81E29E9FFB700CF9102 /* MarcoPolo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcoPolo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDBB82129E9FFB700CF9102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDDBB82329E9FFB700CF9102 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDDBB82529E9FFB700CF9102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDDBB82829E9FFB700CF9102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDDBB82A29E9FFB900CF9102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDDBB82D29E9FFB900CF9102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDDBB82F29E9FFB900CF9102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,8 +54,6 @@
 			children = (
 				FDDBB82129E9FFB700CF9102 /* AppDelegate.swift */,
 				FDDBB82329E9FFB700CF9102 /* SceneDelegate.swift */,
-				FDDBB82529E9FFB700CF9102 /* ViewController.swift */,
-				FDDBB82729E9FFB700CF9102 /* Main.storyboard */,
 				FDDBB82A29E9FFB900CF9102 /* Assets.xcassets */,
 				FDDBB82C29E9FFB900CF9102 /* LaunchScreen.storyboard */,
 				FDDBB82F29E9FFB900CF9102 /* Info.plist */,
@@ -127,7 +121,6 @@
 			files = (
 				FDDBB82E29E9FFB900CF9102 /* LaunchScreen.storyboard in Resources */,
 				FDDBB82B29E9FFB900CF9102 /* Assets.xcassets in Resources */,
-				FDDBB82929E9FFB700CF9102 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +131,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDDBB82629E9FFB700CF9102 /* ViewController.swift in Sources */,
 				FDDBB82229E9FFB700CF9102 /* AppDelegate.swift in Sources */,
 				FDDBB82429E9FFB700CF9102 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +139,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FDDBB82729E9FFB700CF9102 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDDBB82829E9FFB700CF9102 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FDDBB82C29E9FFB900CF9102 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +275,6 @@
 				INFOPLIST_FILE = MarcoPolo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +301,6 @@
 				INFOPLIST_FILE = MarcoPolo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
