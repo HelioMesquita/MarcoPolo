@@ -16,7 +16,6 @@ protocol DeeplinkViewController: UIViewController {
 }
 
 extension DeeplinkViewController {
-
   var arguments: Any? {
     get {
       guard let value = objc_getAssociatedObject(self, &AssociatedKeys.toggleState) else {
@@ -42,7 +41,6 @@ extension DeeplinkViewController {
     UIApplication.shared.arguments = arguments
     UIApplication.shared.open(url)
   }
-
 }
 
 struct AssociatedKeys {
@@ -50,7 +48,6 @@ struct AssociatedKeys {
 }
 
 extension UIApplication {
-
   var arguments: Any? {
     get {
       guard let value = objc_getAssociatedObject(self, &AssociatedKeys.toggleState) else {
@@ -62,11 +59,9 @@ extension UIApplication {
       objc_setAssociatedObject(self, &AssociatedKeys.toggleState, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     }
   }
-
 }
 
 extension Bundle {
-
   static let externalURLSchemes: [String] = {
     guard let urlTypes = main.infoDictionary?["CFBundleURLTypes"] as? [[String: Any]] else {
       return []
@@ -81,7 +76,6 @@ extension Bundle {
 
     return result
   }()
-
 }
 
 extension URL {

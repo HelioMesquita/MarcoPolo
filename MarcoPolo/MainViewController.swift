@@ -8,7 +8,6 @@
 import UIKit
 
 class MainViewController: BaseViewController, DeeplinkViewController {
-
   static var path: String = "main"
 
   override func viewDidLoad() {
@@ -33,11 +32,9 @@ class MainViewController: BaseViewController, DeeplinkViewController {
     }))
     stackView.addArrangedSubview(button3)
   }
-
 }
 
 class BaseViewController: UIViewController {
-
   lazy var stackView: UIStackView = {
     let stackView = UIStackView()
     stackView.axis = .vertical
@@ -55,5 +52,4 @@ class BaseViewController: UIViewController {
       stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
     ])
   }
-
 }

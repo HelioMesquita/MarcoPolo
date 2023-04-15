@@ -20,7 +20,6 @@ protocol DeeplinkCoordinator {
 }
 
 extension DeeplinkCoordinator {
-
   func handleURL(_ url: URL, arguments: Any?) {
     if let viewController = viewControllers.first(where: { $0.canOpenURL(url) }) {
       open(viewController, arguments: arguments)
@@ -37,5 +36,4 @@ extension DeeplinkCoordinator {
     }
     return false
   }
-
 }

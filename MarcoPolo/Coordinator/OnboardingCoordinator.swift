@@ -8,7 +8,6 @@
 import UIKit
 
 class OnboardingCoordinator: DeeplinkCoordinator {
-
   var viewControllers: [DeeplinkViewController.Type] = [
     OnboardingFirstViewController.self,
     OnboardingSecondViewController.self,
@@ -58,5 +57,4 @@ class OnboardingCoordinator: DeeplinkCoordinator {
       openThirdScreen(animated, arguments)
     }
   }
-
 }

@@ -8,7 +8,6 @@
 import UIKit
 
 class MainCoordinator: DeeplinkCoordinator {
-
   var viewControllers: [DeeplinkViewController.Type] = [
     MainViewController.self
   ]
@@ -25,5 +24,4 @@ class MainCoordinator: DeeplinkCoordinator {
     let vc = viewController.init()
     navigation.pushViewController(vc, animated: true)
   }
-
 }

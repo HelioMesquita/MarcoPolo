@@ -20,5 +20,4 @@ class OnboardingThirdViewController: BaseViewController, DeeplinkViewController 
     label2.text = arguments as? String
     stackView.addArrangedSubview(label2)
   }
-
 }
