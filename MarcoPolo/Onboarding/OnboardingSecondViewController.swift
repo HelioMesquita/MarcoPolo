@@ -16,6 +16,10 @@ class OnboardingSecondViewController: BaseViewController, DeeplinkViewController
     label.text = "Second"
     
     stackView.addArrangedSubview(label)
+
+    let label2 = UILabel()
+    label2.text = arguments as? String
+    stackView.addArrangedSubview(label2)
     
     // Do any additional setup after loading the view.
   }

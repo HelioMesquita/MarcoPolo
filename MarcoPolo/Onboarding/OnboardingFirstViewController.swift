@@ -9,7 +9,6 @@ import UIKit
 
 class OnboardingFirstViewController: BaseViewController, DeeplinkViewController {
   static var path: String = "onboading/first"
-  
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -18,18 +17,9 @@ class OnboardingFirstViewController: BaseViewController, DeeplinkViewController 
 
     stackView.addArrangedSubview(label)
 
-    // Do any additional setup after loading the view.
+    let label2 = UILabel()
+    label2.text = arguments as? String
+    stackView.addArrangedSubview(label2)
   }
-
-
-  /*
-   // MARK: - Navigation
-
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destination.
-   // Pass the selected object to the new view controller.
-   }
-   */
 
 }

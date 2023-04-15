@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       return
     }
     if coordinator?.canOpenURL(firstUrl) ?? false {
-      coordinator?.handleURL(firstUrl)
+      coordinator?.handleURL(firstUrl, arguments: UIApplication.shared.arguments)
     } else {
       fatalError("not found \(firstUrl)")
     }
@@ -31,8 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     let navController = UINavigationController()
     coordinator = MainCoordinator(navigation: navController)
-    coordinator?.coordinators = [OnboardingCoordinator(navigation: navController)]
-    coordinator?.open(MainViewController.self)
+    coordinator?.open(MainViewController.self, arguments: nil)
 
     window.rootViewController = navController
 

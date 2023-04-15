@@ -19,17 +19,17 @@ class MainViewController: BaseViewController, DeeplinkViewController {
     stackView.addArrangedSubview(label)
 
     let button1 = UIButton(primaryAction: UIAction(title: "Onboarding First", handler: { action in
-      self.openDeeplink(path: "onboading/first")
+      self.openDeeplink(path: "onboading/first", arguments: "first screen")
     }))
     stackView.addArrangedSubview(button1)
 
     let button2 = UIButton(primaryAction: UIAction(title: "Onboarding Second", handler: { action in
-      self.openDeeplink(path: "onboading/second")
+      self.openDeeplink(path: "onboading/second", arguments: "middle screen")
     }))
     stackView.addArrangedSubview(button2)
 
     let button3 = UIButton(primaryAction: UIAction(title: "Onboarding Third", handler: { action in
-      self.openDeeplink(path: "onboading/third")
+      self.openDeeplink(path: "onboading/third", arguments: "last screen")
     }))
     stackView.addArrangedSubview(button3)
   }
@@ -56,33 +56,5 @@ class BaseViewController: UIViewController {
       stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
     ])
   }
-
-  func openDeeplink(path: String, arguments: Any? = nil) {
-    guard let urlScheme = Bundle.externalURLSchemes.first,
-          let url = URL(string: urlScheme + "://" + path) else {
-      return
-    }
-
-    UIApplication.shared.open(url)
-  }
-
-}
-
-extension Bundle {
-
-  static let externalURLSchemes: [String] = {
-    guard let urlTypes = main.infoDictionary?["CFBundleURLTypes"] as? [[String: Any]] else {
-      return []
-    }
-
-    var result: [String] = []
-    for urlTypeDictionary in urlTypes {
-      guard let urlSchemes = urlTypeDictionary["CFBundleURLSchemes"] as? [String] else { continue }
-      guard let externalURLScheme = urlSchemes.first else { continue }
-      result.append(externalURLScheme)
-    }
-
-    return result
-  }()
 
 }
