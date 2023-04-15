@@ -12,7 +12,7 @@ class OnboardingCoordinator: DeeplinkCoordinator {
   var viewControllers: [DeeplinkViewController.Type] = [
     OnboardingFirstViewController.self,
     OnboardingSecondViewController.self,
-    OnboardingThirdViewController.self,
+    OnboardingThirdViewController.self
   ]
   var coordinators: [DeeplinkCoordinator] = []
   var navigation: UINavigationController

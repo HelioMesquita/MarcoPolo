@@ -9,22 +9,21 @@ import UIKit
 
 class OnboardingSecondViewController: BaseViewController, DeeplinkViewController {
   static var path: String = "onboading/second"
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     let label = UILabel()
     label.text = "Second"
-    
+
     stackView.addArrangedSubview(label)
 
     let label2 = UILabel()
     label2.text = arguments as? String
     stackView.addArrangedSubview(label2)
-    
+
     // Do any additional setup after loading the view.
   }
-  
-  
+
   /*
    // MARK: - Navigation
    
@@ -34,5 +33,5 @@ class OnboardingSecondViewController: BaseViewController, DeeplinkViewController
    // Pass the selected object to the new view controller.
    }
    */
-  
+
 }

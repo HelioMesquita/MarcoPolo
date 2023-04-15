@@ -18,24 +18,23 @@ class MainViewController: BaseViewController, DeeplinkViewController {
 
     stackView.addArrangedSubview(label)
 
-    let button1 = UIButton(primaryAction: UIAction(title: "Onboarding First", handler: { action in
+    let button1 = UIButton(primaryAction: UIAction(title: "Onboarding First", handler: { _ in
       self.openDeeplink(path: "onboading/first", arguments: "first screen")
     }))
     stackView.addArrangedSubview(button1)
 
-    let button2 = UIButton(primaryAction: UIAction(title: "Onboarding Second", handler: { action in
+    let button2 = UIButton(primaryAction: UIAction(title: "Onboarding Second", handler: { _ in
       self.openDeeplink(path: "onboading/second", arguments: "middle screen")
     }))
     stackView.addArrangedSubview(button2)
 
-    let button3 = UIButton(primaryAction: UIAction(title: "Onboarding Third", handler: { action in
+    let button3 = UIButton(primaryAction: UIAction(title: "Onboarding Third", handler: { _ in
       self.openDeeplink(path: "onboading/third", arguments: "last screen")
     }))
     stackView.addArrangedSubview(button3)
   }
 
 }
-
 
 class BaseViewController: UIViewController {
 

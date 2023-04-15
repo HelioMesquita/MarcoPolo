@@ -22,22 +22,20 @@ protocol DeeplinkCoordinator {
 extension DeeplinkCoordinator {
 
   func handleURL(_ url: URL, arguments: Any?) {
-    if let viewController = viewControllers.first(where: { $0.canOpenURL(url) } ) {
+    if let viewController = viewControllers.first(where: { $0.canOpenURL(url) }) {
       open(viewController, arguments: arguments)
-    } else if let coordinator = coordinators.first(where: { $0.canOpenURL(url) } ) {
+    } else if let coordinator = coordinators.first(where: { $0.canOpenURL(url) }) {
       coordinator.handleURL(url, arguments: arguments)
     }
   }
 
   func canOpenURL(_ url: URL) -> Bool {
-    if viewControllers.first(where: { $0.canOpenURL(url) } ) != nil {
+    if viewControllers.first(where: { $0.canOpenURL(url) }) != nil {
       return true
-    } else if coordinators.first(where: { $0.canOpenURL(url) } ) != nil {
+    } else if coordinators.first(where: { $0.canOpenURL(url) }) != nil {
       return true
     }
     return false
   }
 
 }
-
-

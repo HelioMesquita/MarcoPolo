@@ -30,7 +30,7 @@ extension DeeplinkViewController {
   }
 
   static func canOpenURL(_ url: URL) -> Bool {
-    url.pages() == Self.path.split(separator: "/").map( { String($0) })
+    url.pages() == Self.path.split(separator: "/").map({ String($0) })
   }
 
   func openDeeplink(path: String, arguments: Any? = nil) {
@@ -94,4 +94,3 @@ extension URL {
     return urlString.split(separator: "/").dropFirst().map({ String($0) })
   }
 }
-
