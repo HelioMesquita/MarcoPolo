@@ -11,6 +11,12 @@
 		FDDBB82429E9FFB700CF9102 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB82329E9FFB700CF9102 /* SceneDelegate.swift */; };
 		FDDBB82B29E9FFB900CF9102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDBB82A29E9FFB900CF9102 /* Assets.xcassets */; };
 		FDDBB82E29E9FFB900CF9102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDBB82C29E9FFB900CF9102 /* LaunchScreen.storyboard */; };
+		FDDBB83729EA1C9900CF9102 /* OnboardingFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB83629EA1C9900CF9102 /* OnboardingFirstViewController.swift */; };
+		FDDBB83929EA1CAB00CF9102 /* OnboardingSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB83829EA1CAB00CF9102 /* OnboardingSecondViewController.swift */; };
+		FDDBB83B29EA1CC000CF9102 /* OnboardingThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB83A29EA1CC000CF9102 /* OnboardingThirdViewController.swift */; };
+		FDDBB83D29EA1D9500CF9102 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB83C29EA1D9500CF9102 /* MainViewController.swift */; };
+		FDDBB84029EA1EA000CF9102 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB83F29EA1EA000CF9102 /* Coordinator.swift */; };
+		FDDBB84329EA219E00CF9102 /* DeeplinkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB84229EA219E00CF9102 /* DeeplinkProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		FDDBB82A29E9FFB900CF9102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDDBB82D29E9FFB900CF9102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDDBB82F29E9FFB900CF9102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDBB83629EA1C9900CF9102 /* OnboardingFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirstViewController.swift; sourceTree = "<group>"; };
+		FDDBB83829EA1CAB00CF9102 /* OnboardingSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSecondViewController.swift; sourceTree = "<group>"; };
+		FDDBB83A29EA1CC000CF9102 /* OnboardingThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThirdViewController.swift; sourceTree = "<group>"; };
+		FDDBB83C29EA1D9500CF9102 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FDDBB83F29EA1EA000CF9102 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FDDBB84229EA219E00CF9102 /* DeeplinkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +64,43 @@
 		FDDBB82029E9FFB700CF9102 /* MarcoPolo */ = {
 			isa = PBXGroup;
 			children = (
+				FDDBB84129EA218C00CF9102 /* Deeplink */,
+				FDDBB83E29EA1DB500CF9102 /* Coordinator */,
+				FDDBB83529EA1C6E00CF9102 /* Onboarding */,
 				FDDBB82129E9FFB700CF9102 /* AppDelegate.swift */,
 				FDDBB82329E9FFB700CF9102 /* SceneDelegate.swift */,
 				FDDBB82A29E9FFB900CF9102 /* Assets.xcassets */,
 				FDDBB82C29E9FFB900CF9102 /* LaunchScreen.storyboard */,
 				FDDBB82F29E9FFB900CF9102 /* Info.plist */,
+				FDDBB83C29EA1D9500CF9102 /* MainViewController.swift */,
 			);
 			path = MarcoPolo;
+			sourceTree = "<group>";
+		};
+		FDDBB83529EA1C6E00CF9102 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FDDBB83629EA1C9900CF9102 /* OnboardingFirstViewController.swift */,
+				FDDBB83829EA1CAB00CF9102 /* OnboardingSecondViewController.swift */,
+				FDDBB83A29EA1CC000CF9102 /* OnboardingThirdViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		FDDBB83E29EA1DB500CF9102 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FDDBB83F29EA1EA000CF9102 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FDDBB84129EA218C00CF9102 /* Deeplink */ = {
+			isa = PBXGroup;
+			children = (
+				FDDBB84229EA219E00CF9102 /* DeeplinkProtocol.swift */,
+			);
+			path = Deeplink;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +174,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDDBB82229E9FFB700CF9102 /* AppDelegate.swift in Sources */,
+				FDDBB83929EA1CAB00CF9102 /* OnboardingSecondViewController.swift in Sources */,
 				FDDBB82429E9FFB700CF9102 /* SceneDelegate.swift in Sources */,
+				FDDBB83D29EA1D9500CF9102 /* MainViewController.swift in Sources */,
+				FDDBB83729EA1C9900CF9102 /* OnboardingFirstViewController.swift in Sources */,
+				FDDBB83B29EA1CC000CF9102 /* OnboardingThirdViewController.swift in Sources */,
+				FDDBB84029EA1EA000CF9102 /* Coordinator.swift in Sources */,
+				FDDBB84329EA219E00CF9102 /* DeeplinkProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
