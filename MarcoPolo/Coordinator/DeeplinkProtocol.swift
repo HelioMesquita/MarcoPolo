@@ -16,6 +16,7 @@ protocol DeeplinkViewController: UIViewController {
 }
 
 extension DeeplinkViewController {
+
   var arguments: Any? {
     get {
       guard let value = objc_getAssociatedObject(self, &AssociatedKeys.toggleState) else {
