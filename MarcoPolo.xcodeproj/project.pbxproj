@@ -19,6 +19,7 @@
 		FDDBB84329EA219E00CF9102 /* DeeplinkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB84229EA219E00CF9102 /* DeeplinkProtocol.swift */; };
 		FDDBB84529EA550200CF9102 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB84429EA550200CF9102 /* MainCoordinator.swift */; };
 		FDDBB84729EA551300CF9102 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB84629EA551300CF9102 /* OnboardingCoordinator.swift */; };
+		FDDBB84929EA575100CF9102 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB84829EA575100CF9102 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FDDBB84229EA219E00CF9102 /* DeeplinkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkProtocol.swift; sourceTree = "<group>"; };
 		FDDBB84429EA550200CF9102 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		FDDBB84629EA551300CF9102 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		FDDBB84829EA575100CF9102 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				FDDBB82C29E9FFB900CF9102 /* LaunchScreen.storyboard */,
 				FDDBB82F29E9FFB900CF9102 /* Info.plist */,
 				FDDBB83C29EA1D9500CF9102 /* MainViewController.swift */,
+				FDDBB84829EA575100CF9102 /* BaseViewController.swift */,
 			);
 			path = MarcoPolo;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				FDDBB82229E9FFB700CF9102 /* AppDelegate.swift in Sources */,
 				FDDBB83929EA1CAB00CF9102 /* OnboardingSecondViewController.swift in Sources */,
+				FDDBB84929EA575100CF9102 /* BaseViewController.swift in Sources */,
 				FDDBB82429E9FFB700CF9102 /* SceneDelegate.swift in Sources */,
 				FDDBB83D29EA1D9500CF9102 /* MainViewController.swift in Sources */,
 				FDDBB83729EA1C9900CF9102 /* OnboardingFirstViewController.swift in Sources */,

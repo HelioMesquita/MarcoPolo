@@ -33,23 +33,3 @@ class MainViewController: BaseViewController, DeeplinkViewController {
     stackView.addArrangedSubview(button3)
   }
 }
-
-class BaseViewController: UIViewController {
-  lazy var stackView: UIStackView = {
-    let stackView = UIStackView()
-    stackView.axis = .vertical
-    stackView.alignment = .center
-    stackView.translatesAutoresizingMaskIntoConstraints = false
-    return stackView
-  }()
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    view.backgroundColor = .white
-    view.addSubview(stackView)
-    NSLayoutConstraint.activate([
-      stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-      stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
-    ])
-  }
-}
