@@ -129,7 +129,6 @@
 			children = (
 				FD22892729EC78A000C4B4F0 /* Assets.xcassets */,
 				FD22892629EC78A000C4B4F0 /* BaseViewController.swift */,
-				FD22891F29EC78A000C4B4F0 /* Coordinator */,
 				FD22892D29EC78A000C4B4F0 /* GoogleService-Info.plist */,
 				FD22892C29EC78A000C4B4F0 /* MainCoordinator.swift */,
 				FD22892E29EC78A000C4B4F0 /* MainViewController.swift */,
@@ -168,13 +167,6 @@
 				14F45868AF0093BF194F2CF3 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		FD22891F29EC78A000C4B4F0 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		FD22892029EC78A000C4B4F0 /* Onboarding */ = {
@@ -447,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -493,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
