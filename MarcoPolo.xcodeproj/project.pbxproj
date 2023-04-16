@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AE766D868738F8B797EA30E /* Pods_MarcoPoloExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBF73E9D512A99756ECFBB4 /* Pods_MarcoPoloExample.framework */; };
 		2380E696197877B72A3AF251 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB60BD901BAE3D440E1FBAA /* MainViewController.swift */; };
 		4424E8095B263F17CCA781CE /* OnboardingFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288F6260B36D00A02D74C80 /* OnboardingFirstViewController.swift */; };
 		55B1B6F9D731F7525AE00F84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 766A10CA27CB5E8791AF1188 /* GoogleService-Info.plist */; };
 		5ADE239568C7701826897B6E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE551343206AE467000AFD65 /* BaseViewController.swift */; };
 		6A336FDF5688E18CA403279D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF78BCD1729E27A6764EEE5 /* AppDelegate.swift */; };
+		6A984BB777740B24572CE3FD /* Pods_MarcoPoloExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAA68266282667E02A31A88 /* Pods_MarcoPoloExample.framework */; };
 		6CC810C31442B2FD4BE568B3 /* OnboardingSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7F392DB26C40B555E51D98 /* OnboardingSecondViewController.swift */; };
 		79602E9A43B7DA2CEA654275 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B4EC877C543F548437404 /* SceneDelegate.swift */; };
 		7A3BB0F47450B3DFF062E323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE92A6F5FAF24963A89A85A /* LaunchScreen.storyboard */; };
@@ -23,43 +23,53 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02A959817E4D394E690F16A4 /* Pods-MarcoPoloExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPoloExample.debug.xcconfig"; path = "Target Support Files/Pods-MarcoPoloExample/Pods-MarcoPoloExample.debug.xcconfig"; sourceTree = "<group>"; };
 		093410B517214FEF246651B3 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		0EAA68266282667E02A31A88 /* Pods_MarcoPoloExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPoloExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A71AF6701E234ABA4BFE9D /* Pods-MarcoPoloExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPoloExample.release.xcconfig"; path = "Target Support Files/Pods-MarcoPoloExample/Pods-MarcoPoloExample.release.xcconfig"; sourceTree = "<group>"; };
 		2DF78BCD1729E27A6764EEE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35CEAEA2A252CD330FAA057B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		621B4EC877C543F548437404 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6B951BA769E251FF4D46A17A /* OnboardingThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThirdViewController.swift; sourceTree = "<group>"; };
 		766A10CA27CB5E8791AF1188 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		80925B35C9EC4F3DFD6E1A72 /* Pods-MarcoPoloExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPoloExample.release.xcconfig"; path = "Target Support Files/Pods-MarcoPoloExample/Pods-MarcoPoloExample.release.xcconfig"; sourceTree = "<group>"; };
 		80A95B0B782E086A1783FE6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8288F6260B36D00A02D74C80 /* OnboardingFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirstViewController.swift; sourceTree = "<group>"; };
 		9111F40E05E37675289F011C /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
-		B6B0023F2A037F4896298D30 /* Pods-MarcoPoloExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPoloExample.debug.xcconfig"; path = "Target Support Files/Pods-MarcoPoloExample/Pods-MarcoPoloExample.debug.xcconfig"; sourceTree = "<group>"; };
 		CEB60BD901BAE3D440E1FBAA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DD7F392DB26C40B555E51D98 /* OnboardingSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSecondViewController.swift; sourceTree = "<group>"; };
-		DEBF73E9D512A99756ECFBB4 /* Pods_MarcoPoloExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPoloExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EAEE701CAF5E8040C24D2C /* MarcoPoloExample.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MarcoPoloExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD87ECB6063DCE1448845FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE551343206AE467000AFD65 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1938FEC5D0C6FA965CB3CCC7 /* Frameworks */ = {
+		3F9F89505B632E384268CD98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE766D868738F8B797EA30E /* Pods_MarcoPoloExample.framework in Frameworks */,
+				6A984BB777740B24572CE3FD /* Pods_MarcoPoloExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		698220B29C8E5CA0C1976521 /* Frameworks */ = {
+		059E475389E87EA8BA5D7A4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DEBF73E9D512A99756ECFBB4 /* Pods_MarcoPoloExample.framework */,
+				0EAA68266282667E02A31A88 /* Pods_MarcoPoloExample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		289C972531916FF441C7CA82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02A959817E4D394E690F16A4 /* Pods-MarcoPoloExample.debug.xcconfig */,
+				15A71AF6701E234ABA4BFE9D /* Pods-MarcoPoloExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		99D26AB5C87DF92BD3D0082C /* SupportingFiles */ = {
@@ -111,22 +121,12 @@
 			children = (
 				C9C90FB19185C8BC6D4267B3 /* MarcoPoloExample */,
 				D8E3508C4F450ABA3BA0CC9D /* Products */,
-				F70450F36403A4A7F040DB3A /* Pods */,
-				698220B29C8E5CA0C1976521 /* Frameworks */,
+				289C972531916FF441C7CA82 /* Pods */,
+				059E475389E87EA8BA5D7A4A /* Frameworks */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
 			tabWidth = 4;
-		};
-		F70450F36403A4A7F040DB3A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B6B0023F2A037F4896298D30 /* Pods-MarcoPoloExample.debug.xcconfig */,
-				80925B35C9EC4F3DFD6E1A72 /* Pods-MarcoPoloExample.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -135,11 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 643E5E34606F9E6F6C0007C0 /* Build configuration list for PBXNativeTarget "MarcoPoloExample" */;
 			buildPhases = (
-				07408BDB02B02CC1CAD70C87 /* [CP] Check Pods Manifest.lock */,
+				1C7BF8738166B4A3695321FC /* [CP] Check Pods Manifest.lock */,
 				BC1B7C181D68257DD90E36D5 /* Sources */,
 				E352B6DD0B69BB5F0F5DB262 /* Resources */,
-				1938FEC5D0C6FA965CB3CCC7 /* Frameworks */,
-				351DC62FFAAB3A93FB3D06CE /* [CP] Embed Pods Frameworks */,
+				3F9F89505B632E384268CD98 /* Frameworks */,
+				988B756A8ECB25BAA6F5D92C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,7 +192,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07408BDB02B02CC1CAD70C87 /* [CP] Check Pods Manifest.lock */ = {
+		1C7BF8738166B4A3695321FC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,7 +214,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		351DC62FFAAB3A93FB3D06CE /* [CP] Embed Pods Frameworks */ = {
+		988B756A8ECB25BAA6F5D92C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -322,7 +322,7 @@
 		};
 		5745AE5E63BBA8E06BE3C19D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80925B35C9EC4F3DFD6E1A72 /* Pods-MarcoPoloExample.release.xcconfig */;
+			baseConfigurationReference = 15A71AF6701E234ABA4BFE9D /* Pods-MarcoPoloExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -340,7 +340,7 @@
 		};
 		5FE786A9E03271585E0F0558 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6B0023F2A037F4896298D30 /* Pods-MarcoPoloExample.debug.xcconfig */;
+			baseConfigurationReference = 02A959817E4D394E690F16A4 /* Pods-MarcoPoloExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
