@@ -6,19 +6,20 @@
 //
 
 import UIKit
+import OSLog
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-  var coordinator: MainCoordinator?
+  var coordinator: MainCoordinator = MainCoordinator(navigation: UINavigationController())
   var window: UIWindow?
 
   func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
     guard let firstUrl = URLContexts.first?.url else {
       return
     }
-    if coordinator?.canOpenURL(firstUrl) ?? false {
-      coordinator?.handleURL(firstUrl, arguments: UIApplication.shared.arguments)
+    if coordinator.canOpenURL(firstUrl) {
+      coordinator.handleURL(firstUrl, arguments: UIApplication.shared.arguments)
     } else {
-      fatalError("not found \(firstUrl)")
+      os_log("Not found deeplink", log: OSLog.default, type: .error)
     }
   }
 
@@ -27,11 +28,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     let window = UIWindow(windowScene: windowScene)
 
-    let navController = UINavigationController()
-    coordinator = MainCoordinator(navigation: navController)
-    coordinator?.open(MainViewController.self, arguments: nil)
-
-    window.rootViewController = navController
+    coordinator.open(MainViewController.self, arguments: nil)
+    window.rootViewController = coordinator.navigation
 
     self.window = window
     window.makeKeyAndVisible()
