@@ -2,7 +2,7 @@ use_frameworks!
 
 platform :ios, '14.0'
 
-target 'MarcoPoloExample' do
+target 'Example' do
   pod 'MarcoPolo', :path => './'
 
   # target 'MarcoPolo_Tests' do
