@@ -1,0 +1,16 @@
+PODS:
+  - MarcoPolo (0.1.0)
+
+DEPENDENCIES:
+  - MarcoPolo (from `./`)
+
+EXTERNAL SOURCES:
+  MarcoPolo:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  MarcoPolo: d0385f26b8cc68c6fa9616782906b51747c22023
+
+PODFILE CHECKSUM: d9513c72c828d56d37e8db8bc09d9d969071f155
+
+COCOAPODS: 1.11.3
