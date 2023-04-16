@@ -1,7 +1,7 @@
 name: MarcoPolo
 
 options:
-  postGenCommand: pod install
+  # postGenCommand: pod install
   indentWidth: 4
   tabWidth: 4
   xcodeVersion: 0800
@@ -14,16 +14,16 @@ settings:
   base:
     IPHONEOS_DEPLOYMENT_TARGET: 14
 targets:  
-  MarcoPoloExample:
+  Example:
     type: application
     platform: iOS
 
     sources:
-      - path: MarcoPoloExample/
+      - path: Example/
 
     settings:
       base:
         TARGETED_DEVICE_FAMILY: 1
-        DISPLAYNAME: MarcoPoloExample
-        INFOPLIST_FILE: MarcoPoloExample/SupportingFiles/Info.plist
+        DISPLAYNAME: Example
+        INFOPLIST_FILE: Example/SupportingFiles/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.marcopolo
