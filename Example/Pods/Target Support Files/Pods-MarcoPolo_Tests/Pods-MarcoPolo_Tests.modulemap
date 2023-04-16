@@ -1,0 +1,6 @@
+framework module Pods_MarcoPolo_Tests {
+  umbrella header "Pods-MarcoPolo_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

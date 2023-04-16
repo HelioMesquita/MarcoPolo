@@ -1,0 +1,22 @@
+{
+  "name": "MarcoPolo",
+  "version": "0.1.0",
+  "summary": "A short description of MarcoPolo.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/25267226/MarcoPolo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "25267226": "helio.mesquitaios@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/25267226/MarcoPolo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "MarcoPolo/Classes/**/*"
+}
