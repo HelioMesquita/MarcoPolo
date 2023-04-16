@@ -16,7 +16,7 @@
 		FDDBB83B29EA1CC000CF9102 /* OnboardingThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB83A29EA1CC000CF9102 /* OnboardingThirdViewController.swift */; };
 		FDDBB83D29EA1D9500CF9102 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB83C29EA1D9500CF9102 /* MainViewController.swift */; };
 		FDDBB84029EA1EA000CF9102 /* DeeplinkCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB83F29EA1EA000CF9102 /* DeeplinkCoordinator.swift */; };
-		FDDBB84329EA219E00CF9102 /* DeeplinkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB84229EA219E00CF9102 /* DeeplinkProtocol.swift */; };
+		FDDBB84329EA219E00CF9102 /* DeeplinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB84229EA219E00CF9102 /* DeeplinkViewController.swift */; };
 		FDDBB84529EA550200CF9102 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB84429EA550200CF9102 /* MainCoordinator.swift */; };
 		FDDBB84729EA551300CF9102 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB84629EA551300CF9102 /* OnboardingCoordinator.swift */; };
 		FDDBB84929EA575100CF9102 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBB84829EA575100CF9102 /* BaseViewController.swift */; };
@@ -37,7 +37,7 @@
 		FDDBB83A29EA1CC000CF9102 /* OnboardingThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThirdViewController.swift; sourceTree = "<group>"; };
 		FDDBB83C29EA1D9500CF9102 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FDDBB83F29EA1EA000CF9102 /* DeeplinkCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkCoordinator.swift; sourceTree = "<group>"; };
-		FDDBB84229EA219E00CF9102 /* DeeplinkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkProtocol.swift; sourceTree = "<group>"; };
+		FDDBB84229EA219E00CF9102 /* DeeplinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkViewController.swift; sourceTree = "<group>"; };
 		FDDBB84429EA550200CF9102 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		FDDBB84629EA551300CF9102 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		FDDBB84829EA575100CF9102 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		FDDBB83E29EA1DB500CF9102 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				FDDBB84229EA219E00CF9102 /* DeeplinkProtocol.swift */,
+				FDDBB84229EA219E00CF9102 /* DeeplinkViewController.swift */,
 				FDDBB83F29EA1EA000CF9102 /* DeeplinkCoordinator.swift */,
 				FDDBB84429EA550200CF9102 /* MainCoordinator.swift */,
 				FDDBB84629EA551300CF9102 /* OnboardingCoordinator.swift */,
@@ -198,7 +198,7 @@
 				FDDBB83B29EA1CC000CF9102 /* OnboardingThirdViewController.swift in Sources */,
 				FDDBB84029EA1EA000CF9102 /* DeeplinkCoordinator.swift in Sources */,
 				FDDBB84529EA550200CF9102 /* MainCoordinator.swift in Sources */,
-				FDDBB84329EA219E00CF9102 /* DeeplinkProtocol.swift in Sources */,
+				FDDBB84329EA219E00CF9102 /* DeeplinkViewController.swift in Sources */,
 				FDDBB84729EA551300CF9102 /* OnboardingCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

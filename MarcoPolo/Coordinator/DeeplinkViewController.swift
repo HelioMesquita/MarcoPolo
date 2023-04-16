@@ -1,11 +1,15 @@
 //
-//  DeeplinkProtocol.swift
+//  DeeplinkViewController.swift
 //  MarcoPolo
 //
 //  Created by Hélio Mesquita on 14/04/23.
 //
 
 import UIKit
+
+struct AssociatedKeys {
+  static var toggleState: UInt8 = 0
+}
 
 protocol DeeplinkViewController: UIViewController {
   var arguments: Any? { get set }
@@ -42,10 +46,6 @@ extension DeeplinkViewController {
     UIApplication.shared.arguments = arguments
     UIApplication.shared.open(url)
   }
-}
-
-struct AssociatedKeys {
-  static var toggleState: UInt8 = 0
 }
 
 extension UIApplication {
