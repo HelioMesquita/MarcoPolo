@@ -8,7 +8,7 @@
 import UIKit
 
 class MainCoordinator: DeeplinkCoordinator {
-  var viewControllers: [DeeplinkViewController.Type] = [
+  var viewControllers: [any DeeplinkViewController.Type] = [
     MainViewController.self
   ]
   lazy var coordinators: [DeeplinkCoordinator] = [
@@ -20,7 +20,7 @@ class MainCoordinator: DeeplinkCoordinator {
     self.navigation = navigation
   }
 
-  func open(_ viewController: DeeplinkViewController.Type, arguments: Any?) {
+  func open(_ viewController: any DeeplinkViewController.Type, arguments: Any?) {
     let vc = viewController.init()
     navigation.pushViewController(vc, animated: true)
   }

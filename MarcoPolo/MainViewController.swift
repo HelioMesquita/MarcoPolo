@@ -8,6 +8,8 @@
 import UIKit
 
 class MainViewController: BaseViewController, DeeplinkViewController {
+  typealias DeeplinkParameterReceiveType = String
+
   static var path: String = "main"
 
   override func viewDidLoad() {
@@ -28,7 +30,7 @@ class MainViewController: BaseViewController, DeeplinkViewController {
     stackView.addArrangedSubview(button2)
 
     let button3 = UIButton(primaryAction: UIAction(title: "Onboarding Third", handler: { _ in
-      self.openDeeplink(path: "onboading/third", arguments: "last screen")
+      self.openDeeplink(path: "onboading/third", arguments: 1992)
     }))
     stackView.addArrangedSubview(button3)
   }

@@ -8,6 +8,8 @@
 import UIKit
 
 class OnboardingThirdViewController: BaseViewController, DeeplinkViewController {
+  typealias DeeplinkParameterReceiveType = Int
+
   static var path: String = "onboading/third"
 
   override func viewDidLoad() {
@@ -17,7 +19,7 @@ class OnboardingThirdViewController: BaseViewController, DeeplinkViewController 
     stackView.addArrangedSubview(label)
 
     let label2 = UILabel()
-    label2.text = arguments as? String
+    label2.text = "\(String(describing: arguments))"
     stackView.addArrangedSubview(label2)
   }
 }

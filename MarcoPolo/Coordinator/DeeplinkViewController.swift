@@ -12,7 +12,8 @@ struct AssociatedKeys {
 }
 
 protocol DeeplinkViewController: UIViewController {
-  var arguments: Any? { get set }
+  associatedtype DeeplinkParameterReceiveType
+  var arguments: DeeplinkParameterReceiveType? { get set }
   static var path: String { get set }
   static func canOpenURL(_ url: URL) -> Bool
 
@@ -21,12 +22,9 @@ protocol DeeplinkViewController: UIViewController {
 
 extension DeeplinkViewController {
 
-  var arguments: Any? {
+  var arguments: DeeplinkParameterReceiveType? {
     get {
-      guard let value = objc_getAssociatedObject(self, &AssociatedKeys.toggleState) else {
-        return nil
-      }
-      return value
+      return objc_getAssociatedObject(self, &AssociatedKeys.toggleState) as? DeeplinkParameterReceiveType ?? nil
     }
     set(newValue) {
       objc_setAssociatedObject(self, &AssociatedKeys.toggleState, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
@@ -49,12 +47,10 @@ extension DeeplinkViewController {
 }
 
 extension UIApplication {
+
   var arguments: Any? {
     get {
-      guard let value = objc_getAssociatedObject(self, &AssociatedKeys.toggleState) else {
-        return nil
-      }
-      return value
+      return objc_getAssociatedObject(self, &AssociatedKeys.toggleState) ?? nil
     }
     set(newValue) {
       objc_setAssociatedObject(self, &AssociatedKeys.toggleState, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)

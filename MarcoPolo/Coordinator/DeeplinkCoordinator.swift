@@ -9,13 +9,13 @@ import UIKit
 import Firebase
 
 protocol DeeplinkCoordinator {
-  var viewControllers: [DeeplinkViewController.Type] { get set }
+  var viewControllers: [any DeeplinkViewController.Type] { get set }
   var coordinators: [DeeplinkCoordinator] { get set }
   var navigation: UINavigationController { get set }
 
   init(navigation: UINavigationController)
 
-  func open(_ viewController: DeeplinkViewController.Type, arguments: Any?)
+  func open(_ viewController: any DeeplinkViewController.Type, arguments: Any?)
   func handleURL(_ url: URL, arguments: Any?)
   func canOpenURL(_ url: URL) -> Bool
 }

@@ -8,6 +8,8 @@
 import UIKit
 
 class OnboardingSecondViewController: BaseViewController, DeeplinkViewController {
+  typealias DeeplinkParameterReceiveType = String
+
   static var path: String = "onboading/second"
 
   override func viewDidLoad() {
@@ -18,19 +20,8 @@ class OnboardingSecondViewController: BaseViewController, DeeplinkViewController
     stackView.addArrangedSubview(label)
 
     let label2 = UILabel()
-    label2.text = arguments as? String
+    label2.text = arguments
     stackView.addArrangedSubview(label2)
-
-    // Do any additional setup after loading the view.
   }
 
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destination.
-   // Pass the selected object to the new view controller.
-   }
-   */
 }
