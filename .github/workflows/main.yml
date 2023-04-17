@@ -1,0 +1,24 @@
+# This workflow will build a Swift project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
+
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+
+    runs-on: self-hosted
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Xcodegen
+      run: xcodegen
+    - name: Build and Test
+      run: xcodebuild -scheme Example -destination 'platform=iOS Simulator,name=iPhone 14' -workspace MarcoPolo.xcworkspace
+      # run: xcodebuild build-for-testing -project LeagueOfLegendsChampions.xcodeproj -scheme LeagueOfLegendsChampions
+
