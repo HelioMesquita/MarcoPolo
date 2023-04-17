@@ -11,7 +11,7 @@ struct AssociatedKeys {
   static var toggleState: UInt8 = 0
 }
 
-protocol DeeplinkViewController: UIViewController {
+public protocol DeeplinkViewController: UIViewController {
   associatedtype DeeplinkParameterReceiveType
   var arguments: DeeplinkParameterReceiveType? { get set }
   static var path: String { get set }
@@ -20,7 +20,7 @@ protocol DeeplinkViewController: UIViewController {
   func openDeeplink(path: String, arguments: Any?)
 }
 
-extension DeeplinkViewController {
+public extension DeeplinkViewController {
 
   var arguments: DeeplinkParameterReceiveType? {
     get {
@@ -46,7 +46,7 @@ extension DeeplinkViewController {
   }
 }
 
-extension UIApplication {
+public extension UIApplication {
 
   var arguments: Any? {
     get {
@@ -58,7 +58,7 @@ extension UIApplication {
   }
 }
 
-extension Bundle {
+public extension Bundle {
   static let externalURLSchemes: [String] = {
     guard let urlTypes = main.infoDictionary?["CFBundleURLTypes"] as? [[String: Any]] else {
       return []
@@ -75,7 +75,7 @@ extension Bundle {
   }()
 }
 
-extension URL {
+public extension URL {
   func pages() -> [String] {
     var urlComponents = URLComponents(url: self, resolvingAgainstBaseURL: false)
     urlComponents?.queryItems = []

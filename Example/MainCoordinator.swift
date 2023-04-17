@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MarcoPolo
 
 class MainCoordinator: DeeplinkCoordinator {
   var viewControllers: [any DeeplinkViewController.Type] = [

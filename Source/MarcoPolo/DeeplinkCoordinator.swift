@@ -6,9 +6,8 @@
 //
 
 import UIKit
-import Firebase
 
-protocol DeeplinkCoordinator {
+public protocol DeeplinkCoordinator {
   var viewControllers: [any DeeplinkViewController.Type] { get set }
   var coordinators: [DeeplinkCoordinator] { get set }
   var navigation: UINavigationController { get set }
@@ -20,14 +19,14 @@ protocol DeeplinkCoordinator {
   func canOpenURL(_ url: URL) -> Bool
 }
 
-extension DeeplinkCoordinator {
+public extension DeeplinkCoordinator {
   func handleURL(_ url: URL, arguments: Any?) {
     if let viewController = viewControllers.first(where: { $0.canOpenURL(url) }) {
 
-      Analytics.logEvent(AnalyticsEventScreenView, parameters: [
-        AnalyticsParameterScreenName: viewController.path,
-        AnalyticsParameterScreenClass: String(describing: viewController)
-      ])
+//      Analytics.logEvent(AnalyticsEventScreenView, parameters: [
+//        AnalyticsParameterScreenName: viewController.path,
+//        AnalyticsParameterScreenClass: String(describing: viewController)
+//      ])
 
       open(viewController, arguments: arguments)
     } else if let coordinator = coordinators.first(where: { $0.canOpenURL(url) }) {
