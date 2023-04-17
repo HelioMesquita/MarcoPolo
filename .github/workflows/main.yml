@@ -19,6 +19,6 @@ jobs:
     - name: Xcodegen
       run: xcodegen
     - name: Build and Test
-      run: xcodebuild -scheme Example -destination 'platform=iOS Simulator,name=iPhone 14' -project MarcoPolo.xcodeproj
+      run: xcodebuild -scheme Example -destination 'platform=iOS Simulator,name=iPhone 14' -workspace MarcoPolo.xcworkspace
       # run: xcodebuild build-for-testing -project LeagueOfLegendsChampions.xcodeproj -scheme LeagueOfLegendsChampions
 
