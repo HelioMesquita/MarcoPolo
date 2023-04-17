@@ -28,7 +28,7 @@ public extension DeeplinkCoordinator {
 //        AnalyticsParameterScreenClass: String(describing: viewController)
 //      ])
 
-      open(viewController, arguments: arguments)
+      open(viewController, arguments: arguments ?? url)
     } else if let coordinator = coordinators.first(where: { $0.canOpenURL(url) }) {
       coordinator.handleURL(url, arguments: arguments)
     }
