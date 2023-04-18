@@ -1,5 +1,4 @@
 [![Swift Version][swift-image]][swift-url]
-[![Build Status][travis-image]][travis-url]
 [![License][license-image]][license-url]
 [![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/EZSwiftExtensions.svg)](https://img.shields.io/cocoapods/v/LFAlertController.svg)  
@@ -7,18 +6,18 @@
 # MarcoPolo
 <br />
 <p align="center">
-  <a href="https://github.com/alexanderritik/Best-README-Template">
+  <!-- <a href="https://github.com/alexanderritik/Best-README-Template">
     <img src="logo.jpeg" alt="Logo" width="80" height="80">
-  </a>
+  </a> -->
   <p align="center">
     MarcoPolo combines coordinator and internal deep linking in a unique solution.
   </p>
 </p>
 
-<p align="row">
+<!-- <p align="row">
 <img src= "https://media.giphy.com/media/HYOlBKJBqgAfe/giphy.gif" width="400" >
 <img src= "https://media.giphy.com/media/HYOlBKJBqgAfe/giphy.gif" width="400" >
-</p>
+</p> -->
 
 ## Propose to solve
 
@@ -55,26 +54,20 @@ pod 'MarcoPolo'
 
 ## How to use
 
-```swift
+<!-- ```swift
 import EZSwiftExtensions
 ez.detectScreenShot { () -> () in
     print("User took a screen shot")
 }
-```
+``` -->
 
 ## Contribute
 
 We would love you for the contribution to **MarcoPolo**, check the ``LICENSE`` file for more info.
 
-## Meta
-
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
-
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
 [https://github.com/yourname/github-link](https://github.com/dbader/)
 
-[swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg
+[swift-image]:https://img.shields.io/badge/swift-5.X-orange.svg
 [swift-url]: https://swift.org/
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE
