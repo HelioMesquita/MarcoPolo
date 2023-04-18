@@ -65,7 +65,7 @@ ez.detectScreenShot { () -> () in
 
 We would love you for the contribution to **MarcoPolo**, check the ``LICENSE`` file for more info.
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[https://github.com/HelioMesquita/MarcoPolo](https://github.com/HelioMesquita)
 
 [swift-image]:https://img.shields.io/badge/swift-5.X-orange.svg
 [swift-url]: https://swift.org/
