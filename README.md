@@ -6,7 +6,7 @@
 # MarcoPolo
 <br />
 <p align="center">
-  <a href="https://github.com/HelioMesquita/MarcoPolo/blob/main/images/marcopolo.jpeg?raw=true">
+  <a href="https://raw.githubusercontent.com/HelioMesquita/MarcoPolo/main/images/marcopolo.jpeg">
     <img src="logo.jpeg" alt="Logo" width="80" height="80">
   </a>
   <p align="center">
