@@ -3,19 +3,13 @@ import XCTest
 
 class BundleUtilitiesTests: XCTestCase {
 
-  static let urlSchemes: [[String: Any]] = [["CFBundleURLName": "com.helio.MarcoPolo",
-                                            "CFBundleTypeRole": "Editor",
-                                            "CFBundleURLSchemes": ["marcopolo"]]]
-
   override class func setUp() {
     super.setUp()
-    BundleUtilities.bundleMainInfoDictionary = [
-      BundleInfoDictionary.keyCFBundleURLTypes.rawValue: urlSchemes
-    ]
+    setUpApplication()
   }
 
   func testGetExternalURLSchemes() {
-    XCTAssertEqual(BundleUtilities.externalURLSchemes(), ["marcopolo"])
+    XCTAssertEqual(BundleUtilities.externalURLSchemes(), ["testeApplication"])
   }
 
 }

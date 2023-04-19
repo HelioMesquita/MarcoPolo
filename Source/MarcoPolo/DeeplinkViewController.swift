@@ -37,8 +37,7 @@ public extension DeeplinkViewController {
       return
     }
 
-    UIApplication.shared.arguments = arguments
-    UIApplication.shared.open(url)
+    UIApplicationUtilities.open(url, with: arguments)
   }
 }
 

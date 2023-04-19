@@ -3,7 +3,7 @@ import XCTest
 
 class BundleInfoDictionaryTests: XCTestCase {
   func testKeys() {
-    XCTAssertEqual(BundleInfoDictionary.keyCFBundleURLTypes.rawValue, "CFBundleShortVersionString")
-    XCTAssertEqual(BundleInfoDictionary.keyCFBundleURLSchemes.rawValue, "CFBundleVersion")
+    XCTAssertEqual(BundleInfoDictionary.keyCFBundleURLTypes.rawValue, "CFBundleURLTypes")
+    XCTAssertEqual(BundleInfoDictionary.keyCFBundleURLSchemes.rawValue, "CFBundleURLSchemes")
   }
 }

@@ -7,33 +7,12 @@
 
 import Foundation
 
-// extension Bundle {
-//  func externalURLSchemes() -> [String] {
-//    guard let urlTypes = infoDictionary?["CFBundleURLTypes"] as? [[String: Any]] else {
-//      return []
-//    }
-//
-//    var result: [String] = []
-//    for urlTypeDictionary in urlTypes {
-//      guard let urlSchemes = urlTypeDictionary["CFBundleURLSchemes"] as? [String] else { continue }
-//      guard let externalURLScheme = urlSchemes.first else { continue }
-//      result.append(externalURLScheme)
-//    }
-//
-//    return result
-//  }
-// }
-
-protocol BundleInfoDictionaryShortcuts {
-  static var bundleMainInfoDictionary: [String: Any]? { get set }
-}
-
 enum BundleInfoDictionary: String {
   case keyCFBundleURLTypes = "CFBundleURLTypes"
   case keyCFBundleURLSchemes = "CFBundleURLSchemes"
 }
 
-class BundleUtilities: BundleInfoDictionaryShortcuts {
+class BundleUtilities {
 
   static var bundleMainInfoDictionary: [String: Any]? = Bundle.main.infoDictionary
 
