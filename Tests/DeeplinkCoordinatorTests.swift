@@ -2,13 +2,12 @@
 import XCTest
 
 class DeeplinkCoordinatorTests: XCTestCase {
-
-  let sut = MockMainCoordinator(navigation: UINavigationController())
-  var secondCoordinator: MockSecondCoordinator {
+  private let sut = MockMainCoordinator(navigation: UINavigationController())
+  private var secondCoordinator: MockSecondCoordinator {
     sut.coordinators.first as! MockSecondCoordinator
   }
 
-  var thirdCoordinator: MockThirdCoordinator {
+  private var thirdCoordinator: MockThirdCoordinator {
     sut.coordinators.first?.coordinators.first as! MockThirdCoordinator
   }
 
@@ -68,5 +67,4 @@ class DeeplinkCoordinatorTests: XCTestCase {
     XCTAssertFalse(secondCoordinator.hasCalledOpen)
     XCTAssertFalse(sut.hasCalledOpen)
   }
-
 }

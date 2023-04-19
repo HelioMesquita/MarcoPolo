@@ -1,7 +1,6 @@
 @testable import MarcoPolo
 
 class MockMainCoordinator: DeeplinkCoordinator {
-
   class MockMainViewController: UIViewController, DeeplinkViewController {
     typealias DeeplinkParameterReceiveType = String
 
@@ -27,7 +26,6 @@ class MockMainCoordinator: DeeplinkCoordinator {
 }
 
 class MockSecondCoordinator: DeeplinkCoordinator {
-
   class MockSecondViewController: UIViewController, DeeplinkViewController {
     typealias DeeplinkParameterReceiveType = String
 
@@ -53,7 +51,6 @@ class MockSecondCoordinator: DeeplinkCoordinator {
 }
 
 class MockThirdCoordinator: DeeplinkCoordinator {
-
   class MockThirdViewController: UIViewController, DeeplinkViewController {
     typealias DeeplinkParameterReceiveType = String
 

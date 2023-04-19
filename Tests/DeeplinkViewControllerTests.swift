@@ -31,5 +31,4 @@ class DeeplinkViewControllerTests: XCTestCase {
     vc.arguments = "testing argument saving"
     XCTAssertEqual(vc.arguments, "testing argument saving")
   }
-
 }
