@@ -32,7 +32,7 @@ public extension DeeplinkViewController {
   }
 
   func openDeeplink(path: String, arguments: Any? = nil) {
-    guard let urlScheme = Bundle.externalURLSchemes.first,
+    guard let urlScheme = BundleUtilities.externalURLSchemes().first,
           let url = URL(string: urlScheme + "://" + path) else {
       return
     }
@@ -45,5 +45,3 @@ public extension DeeplinkViewController {
 struct AssociatedKeys {
   static var toggleState: UInt8 = 0
 }
-
-
