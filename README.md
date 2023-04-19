@@ -6,18 +6,13 @@
 # MarcoPolo
 <br />
 <p align="center">
-  <!-- <a href="https://github.com/alexanderritik/Best-README-Template">
+  <a href="https://github.com/HelioMesquita/MarcoPolo/blob/master/images/marcopolo.jpeg">
     <img src="logo.jpeg" alt="Logo" width="80" height="80">
-  </a> -->
+  </a>
   <p align="center">
     MarcoPolo combines coordinator and internal deep linking in a unique solution.
   </p>
 </p>
-
-<!-- <p align="row">
-<img src= "https://media.giphy.com/media/HYOlBKJBqgAfe/giphy.gif" width="400" >
-<img src= "https://media.giphy.com/media/HYOlBKJBqgAfe/giphy.gif" width="400" >
-</p> -->
 
 ## Propose to solve
 
