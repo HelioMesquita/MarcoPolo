@@ -22,11 +22,6 @@ public protocol DeeplinkCoordinator {
 public extension DeeplinkCoordinator {
   func handleURL(_ url: URL, arguments: Any?) {
     if let viewController = viewControllers.first(where: { $0.canOpenURL(url) }) {
-//      Analytics.logEvent(AnalyticsEventScreenView, parameters: [
-//        AnalyticsParameterScreenName: viewController.path,
-//        AnalyticsParameterScreenClass: String(describing: viewController)
-//      ])
-
       open(viewController, arguments: arguments ?? url)
     } else if let coordinator = coordinators.first(where: { $0.canOpenURL(url) }) {
       coordinator.handleURL(url, arguments: arguments)

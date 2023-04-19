@@ -1,12 +1,6 @@
 @testable import MarcoPolo
 import XCTest
 
-class MockViewController: UIViewController, DeeplinkViewController {
-  typealias DeeplinkParameterReceiveType = String
-
-  static var path: String = "mock/testing"
-}
-
 class DeeplinkViewControllerTests: XCTestCase {
   private let sut = MockViewController.self
 
@@ -32,18 +26,10 @@ class DeeplinkViewControllerTests: XCTestCase {
     XCTAssertEqual(XCTestCase.customApplication.arguments as! String, "testing argument")
   }
 
-//  var arguments: DeeplinkParameterReceiveType? {
-//    get {
-//      return objc_getAssociatedObject(self, &AssociatedKeys.toggleState) as? DeeplinkParameterReceiveType ?? nil
-//    }
-//    set(newValue) {
-//      objc_setAssociatedObject(self, &AssociatedKeys.toggleState, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-//    }
-//  }
-//
-//  static func canOpenURL(_ url: URL) -> Bool {
-//    url.pages() == Self.path.split(separator: "/").map({ String($0) })
-//  }
-//
-//  func openDeeplink(path: String, arguments: Any? = nil) {
+  func testArguments() {
+    let vc = sut.init()
+    vc.arguments = "testing argument saving"
+    XCTAssertEqual(vc.arguments, "testing argument saving")
+  }
+
 }
