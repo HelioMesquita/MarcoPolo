@@ -6,8 +6,9 @@
 # MarcoPolo
 <br />
 <p align="center">
-  <a href="https://github.com/HelioMesquita/MarcoPolo/blob/main/images/marcopolo.png?raw=true">
-    <img src="logo.jpeg" alt="Logo" width="80" height="80">
+
+  <a href="https://github.com/HelioMesquita/MarcoPolo/blob/main/images/marcopolo.png">
+  <img src="https://github.com/HelioMesquita/MarcoPolo/blob/main/images/marcopolo.png?raw=true" alt="Swiftmazing Logo" width="80" height="80">
   </a>
   <p align="center">
     MarcoPolo combines coordinator and internal deep linking in a unique solution.
