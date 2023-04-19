@@ -5,8 +5,8 @@
 //  Created by Hélio Mesquita on 14/04/23.
 //
 
-import UIKit
 import MarcoPolo
+import UIKit
 
 class OnboardingThirdViewController: BaseViewController, DeeplinkViewController {
   typealias DeeplinkParameterReceiveType = Int

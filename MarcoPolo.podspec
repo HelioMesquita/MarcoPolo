@@ -22,4 +22,8 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'Source/**/*.swift'
   
+  s.test_spec 'Tests' do |test_spec|
+    test_spec.source_files = 'Tests/**/*'
+  end
+  
 end

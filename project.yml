@@ -1,7 +1,12 @@
 name: MarcoPolo
 
 options:
-  postGenCommand: pod install
+  postGenCommand: |
+                  pod install
+                  rm -rf Pods/Pods.xcodeproj/xcshareddata/
+                  mkdir Pods/Pods.xcodeproj/xcshareddata/
+                  mkdir Pods/Pods.xcodeproj/xcshareddata/xcschemes/
+                  mv Pods/Pods.xcodeproj/xcuserdata/heliomesquita.xcuserdatad/xcschemes/MarcoPolo-Unit-Tests.xcscheme Pods/Pods.xcodeproj/xcshareddata/xcschemes/MarcoPolo-Unit-Tests.xcscheme
   indentWidth: 4
   tabWidth: 4
   xcodeVersion: 0800
