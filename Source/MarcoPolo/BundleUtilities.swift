@@ -13,7 +13,6 @@ enum BundleInfoDictionary: String {
 }
 
 class BundleUtilities {
-
   static var bundleMainInfoDictionary: [String: Any]? = Bundle.main.infoDictionary
 
   static func externalURLSchemes() -> [String] {
@@ -30,5 +29,4 @@ class BundleUtilities {
 
     return result
   }
-
 }

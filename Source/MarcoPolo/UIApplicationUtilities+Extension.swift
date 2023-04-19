@@ -13,10 +13,9 @@ public protocol UIApplicationProtocol {
 }
 
 extension UIApplication: UIApplicationProtocol {
-
   public var arguments: Any? {
     get {
-      return objc_getAssociatedObject(self, &AssociatedKeys.toggleState) ?? nil
+      objc_getAssociatedObject(self, &AssociatedKeys.toggleState)
     }
     set(newValue) {
       objc_setAssociatedObject(self, &AssociatedKeys.toggleState, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
@@ -27,15 +26,12 @@ extension UIApplication: UIApplicationProtocol {
     self.arguments = arguments
     return openURL(url)
   }
-
 }
 
 class UIApplicationUtilities {
-
   static var application: UIApplicationProtocol = UIApplication.shared
 
   static func open(_ url: URL, with arguments: Any?) {
     application.open(url, with: arguments)
   }
-
 }

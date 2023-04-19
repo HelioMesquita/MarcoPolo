@@ -5,8 +5,8 @@
 //  Created by Hélio Mesquita on 15/04/23.
 //
 
-import UIKit
 import MarcoPolo
+import UIKit
 
 class MainCoordinator: DeeplinkCoordinator {
   var viewControllers: [any DeeplinkViewController.Type] = [

@@ -2,7 +2,6 @@
 import XCTest
 
 class BundleUtilitiesTests: XCTestCase {
-
   override class func setUp() {
     super.setUp()
     setUpApplication()
@@ -11,5 +10,4 @@ class BundleUtilitiesTests: XCTestCase {
   func testGetExternalURLSchemes() {
     XCTAssertEqual(BundleUtilities.externalURLSchemes(), ["testeApplication"])
   }
-
 }

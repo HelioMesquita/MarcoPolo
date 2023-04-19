@@ -5,8 +5,8 @@
 //  Created by Hélio Mesquita on 14/04/23.
 //
 
-import UIKit
 import MarcoPolo
+import UIKit
 
 class OnboardingFirstViewController: BaseViewController, DeeplinkViewController {
   typealias DeeplinkParameterReceiveType = String
@@ -24,5 +24,4 @@ class OnboardingFirstViewController: BaseViewController, DeeplinkViewController 
     label2.text = arguments
     stackView.addArrangedSubview(label2)
   }
-
 }

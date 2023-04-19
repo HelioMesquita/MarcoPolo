@@ -2,7 +2,6 @@
 import XCTest
 
 class MockUIApplication: UIApplicationProtocol {
-
   var hasCalledOpen = false
   var arguments: Any?
 
@@ -11,5 +10,4 @@ class MockUIApplication: UIApplicationProtocol {
     hasCalledOpen = true
     return false
   }
-
 }

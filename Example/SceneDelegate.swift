@@ -5,11 +5,11 @@
 //  Created by Hélio Mesquita on 14/04/23.
 //
 
-import UIKit
 import OSLog
+import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-  var coordinator: MainCoordinator = MainCoordinator(navigation: UINavigationController())
+  var coordinator = MainCoordinator(navigation: UINavigationController())
   var window: UIWindow?
 
   func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {

@@ -9,7 +9,6 @@ import UIKit
 // import FirebaseAnalytics
 
 class BaseViewController: UIViewController {
-
   lazy var stackView: UIStackView = {
     let stackView = UIStackView()
     stackView.axis = .vertical

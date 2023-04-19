@@ -2,7 +2,6 @@
 import XCTest
 
 extension XCTestCase {
-
   static let customApplication = MockUIApplication()
   static let urlSchemes: [[String: Any]] = [["CFBundleURLName": "com.helio.testApplication",
                                             "CFBundleTypeRole": "Editor",
@@ -14,5 +13,4 @@ extension XCTestCase {
     ]
     UIApplicationUtilities.application = XCTestCase.customApplication
   }
-
 }

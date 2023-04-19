@@ -2,5 +2,4 @@
 import XCTest
 
 class DeeplinkCoordinatorTests: XCTestCase {
-
 }

@@ -17,10 +17,9 @@ public protocol DeeplinkViewController: UIViewController {
 }
 
 public extension DeeplinkViewController {
-
   var arguments: DeeplinkParameterReceiveType? {
     get {
-      return objc_getAssociatedObject(self, &AssociatedKeys.toggleState) as? DeeplinkParameterReceiveType ?? nil
+      objc_getAssociatedObject(self, &AssociatedKeys.toggleState) as? DeeplinkParameterReceiveType
     }
     set(newValue) {
       objc_setAssociatedObject(self, &AssociatedKeys.toggleState, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)

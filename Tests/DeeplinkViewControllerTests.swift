@@ -8,8 +8,7 @@ class MockViewController: UIViewController, DeeplinkViewController {
 }
 
 class DeeplinkViewControllerTests: XCTestCase {
-
-  let sut = MockViewController.self
+  private let sut = MockViewController.self
 
   override class func setUp() {
     super.setUp()
