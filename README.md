@@ -6,7 +6,6 @@
 # MarcoPolo
 <br />
 <p align="center">
-
   <a href="https://github.com/HelioMesquita/MarcoPolo/blob/main/images/marcopolo.png">
   <img src="https://github.com/HelioMesquita/MarcoPolo/blob/main/images/marcopolo.png?raw=true" alt="Swiftmazing Logo" width="200" height="200">
   </a>
@@ -53,7 +52,10 @@ pod 'MarcoPolo'
 Before you starting using MarcoPolo you must configure some URLScheme to allow the deep-liking work.
 
 First follow those steps in image. You can choose the name that you want.
+
 <a href="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*2wMikUaE4EEZFr3MABGaiQ.png">
+  <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*2wMikUaE4EEZFr3MABGaiQ.png" alt="Swiftmazing Logo" width="400" height="400">
+  </a>
 
 After configuring the deep-linking, you must create the main/principal coordinator to hold all features and implement it in your app delegate or scene delegate.
 
@@ -163,7 +165,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 Now everything is set up and you are ready to go
 
-Just dont forget to add your new screen in the coordinator :)
+Just dont forget to add your new screen in the coordinator 😅
 
 ## Contribute
 
