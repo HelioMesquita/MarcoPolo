@@ -48,9 +48,11 @@ pod 'MarcoPolo'
 ```
 
 #### Swift Package Manager
+```swift
 dependencies: [
     .package(url: "https://github.com/HelioMesquita/MarcoPolo/.git", .branch("main"))
 ]
+```
 
 ## How to use
 
