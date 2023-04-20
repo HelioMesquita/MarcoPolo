@@ -50,12 +50,152 @@ pod 'MarcoPolo'
 
 ## How to use
 
-<!-- ```swift
-import EZSwiftExtensions
-ez.detectScreenShot { () -> () in
-    print("User took a screen shot")
+Before you starting using MarcoPolo you must configure some URLScheme to allow the deep-liking work.
+
+First follow those steps in image. You can choose the name that you want.
+<a href="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*2wMikUaE4EEZFr3MABGaiQ.png">
+
+After configuring the deep-linking, you must create the main/principal coordinator to hold all features and implement it in your app delegate or scene delegate.
+
+```swift
+import MarcoPolo
+import UIKit
+
+class MainCoordinator: DeeplinkCoordinator {
+  var viewControllers: [any DeeplinkViewController.Type] = [
+    ViewController.self // First view controller when opens the app
+  ]
+  lazy var coordinators: [DeeplinkCoordinator] = [
+    // All your features coordinators here
+  ]
+  var navigation: UINavigationController
+
+  required init(navigation: UINavigationController) {
+    self.navigation = navigation
+  }
+
+  func open(_ viewController: any DeeplinkViewController.Type, arguments: Any?) {
+    let vc = viewController.init()
+    navigation.pushViewController(vc, animated: true)
+  }
 }
-``` -->
+```
+
+Your view controller will appear like this
+
+```swift
+import MarcoPolo
+import UIKit
+
+class ViewController: UIViewController, DeeplinkViewController, DeeplinkOpener {
+  typealias DeeplinkParameterReceiveType = String //Type of argument that deep-link will add in your class
+
+  static var path: String = "main" // Deep-link path to find your class
+}
+```
+
+### Using SceneDelegate
+
+```swift
+import OSLog
+import UIKit
+
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+  var coordinator = MainCoordinator(navigation: UINavigationController())
+  var window: UIWindow?
+
+  func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+    guard let firstUrl = URLContexts.first?.url else {
+      return
+    }
+    if coordinator.canOpenURL(firstUrl) {
+      coordinator.handleURL(firstUrl, arguments: UIApplication.shared.arguments)
+    } else {
+      os_log("Not found deeplink", log: OSLog.default, type: .error)
+    }
+  }
+
+  func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    guard let windowScene = (scene as? UIWindowScene) else { return }
+
+    let window = UIWindow(windowScene: windowScene)
+
+    coordinator.open(ViewController.self, arguments: nil)
+    window.rootViewController = coordinator.navigation
+
+    self.window = window
+    window.makeKeyAndVisible()
+  }
+}
+```
+
+### Using SceneDelegate
+
+```swift
+import OSLog
+import UIKit
+
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+  var coordinator = MainCoordinator(navigation: UINavigationController())
+  var window: UIWindow?
+
+  func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+    guard let firstUrl = URLContexts.first?.url else {
+      return
+    }
+    if coordinator.canOpenURL(firstUrl) {
+      coordinator.handleURL(firstUrl, arguments: UIApplication.shared.arguments)
+    } else {
+      os_log("Not found deeplink", log: OSLog.default, type: .error)
+    }
+  }
+
+  func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    guard let windowScene = (scene as? UIWindowScene) else { return }
+
+    let window = UIWindow(windowScene: windowScene)
+
+    coordinator.open(ViewController.self, arguments: nil)
+    window.rootViewController = coordinator.navigation
+
+    self.window = window
+    window.makeKeyAndVisible()
+  }
+}
+```
+
+### Using AppDelegate
+
+```swift
+import OSLog
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+  var window: UIWindow?
+  var coordinator = MainCoordinator(navigation: UINavigationController())
+  
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    window = UIWindow(frame: UIScreen.main.bounds)
+    coordinator.open(ViewController.self, arguments: nil)
+    window.rootViewController = coordinator.navigation
+    self.window = window
+    window.makeKeyAndVisible()
+    return true
+  }
+
+  func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    if coordinator.canOpenURL(url) {
+      coordinator.handleURL(url, arguments: UIApplication.shared.arguments)
+      return true
+    } else {
+      os_log("Not found deeplink", log: OSLog.default, type: .error)
+      return false
+    }
+}
+```
+
 
 ## Contribute
 
