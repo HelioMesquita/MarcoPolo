@@ -3,10 +3,10 @@ name: MarcoPolo
 options:
   postGenCommand: |
                   pod install
-                  rm -rf Pods/Pods.xcodeproj/xcshareddata/
-                  mkdir Pods/Pods.xcodeproj/xcshareddata/
-                  mkdir Pods/Pods.xcodeproj/xcshareddata/xcschemes/
-                  mv Pods/Pods.xcodeproj/xcuserdata/heliomesquita.xcuserdatad/xcschemes/MarcoPolo-Unit-Tests.xcscheme Pods/Pods.xcodeproj/xcshareddata/xcschemes/MarcoPolo-Unit-Tests.xcscheme
+                  # rm -rf Pods/Pods.xcodeproj/xcshareddata/
+                  # mkdir Pods/Pods.xcodeproj/xcshareddata/
+                  # mkdir Pods/Pods.xcodeproj/xcshareddata/xcschemes/
+                  # mv Pods/Pods.xcodeproj/xcuserdata/heliomesquita.xcuserdatad/xcschemes/MarcoPolo-Unit-Tests.xcscheme Pods/Pods.xcodeproj/xcshareddata/xcschemes/MarcoPolo-Unit-Tests.xcscheme
   indentWidth: 4
   tabWidth: 4
   xcodeVersion: 0800
@@ -31,4 +31,17 @@ targets:
         TARGETED_DEVICE_FAMILY: 1
         DISPLAYNAME: Example
         INFOPLIST_FILE: Example/SupportingFiles/Info.plist
-        PRODUCT_BUNDLE_IDENTIFIER: com.marcopolo
+        PRODUCT_BUNDLE_IDENTIFIER: com.marcopolo.example
+
+  ExampleTests:
+    type: bundle.unit-test
+    platform: iOS
+    dependencies:
+      - target: Example
+    sources:
+      - path: ExampleTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.marcopolo.exampletests
+        GENERATE_INFOPLIST_FILE: YES
+

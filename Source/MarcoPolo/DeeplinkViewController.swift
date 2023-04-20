@@ -12,8 +12,6 @@ public protocol DeeplinkViewController: UIViewController {
   var arguments: DeeplinkParameterReceiveType? { get set }
   static var path: String { get set }
   static func canOpenURL(_ url: URL) -> Bool
-
-  func openDeeplink(path: String, arguments: Any?)
 }
 
 public extension DeeplinkViewController {
@@ -28,15 +26,6 @@ public extension DeeplinkViewController {
 
   static func canOpenURL(_ url: URL) -> Bool {
     url.pages() == Self.path.split(separator: "/").map({ String($0) })
-  }
-
-  func openDeeplink(path: String, arguments: Any? = nil) {
-    guard let urlScheme = BundleUtilities.externalURLSchemes().first,
-          let url = URL(string: urlScheme + "://" + path) else {
-      return
-    }
-
-    UIApplicationUtilities.open(url, with: arguments)
   }
 }
 

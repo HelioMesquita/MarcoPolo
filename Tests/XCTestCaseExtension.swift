@@ -1,9 +1,9 @@
 @testable import MarcoPolo
 import XCTest
 
-extension XCTestCase {
-  static let customApplication = MockUIApplication()
-  static let urlSchemes: [[String: Any]] = [["CFBundleURLName": "com.helio.testApplication",
+internal extension XCTestCase {
+  internal static let customApplication = MockUIApplication()
+  internal static let urlSchemes: [[String: Any]] = [["CFBundleURLName": "com.helio.testApplication",
                                             "CFBundleTypeRole": "Editor",
                                             "CFBundleURLSchemes": ["testeApplication"]]]
 

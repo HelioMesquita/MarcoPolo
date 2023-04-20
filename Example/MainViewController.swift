@@ -8,7 +8,7 @@
 import MarcoPolo
 import UIKit
 
-class MainViewController: BaseViewController, DeeplinkViewController {
+class MainViewController: BaseViewController, DeeplinkViewController, DeeplinkOpener {
   typealias DeeplinkParameterReceiveType = String
 
   static var path: String = "main"
@@ -31,7 +31,7 @@ class MainViewController: BaseViewController, DeeplinkViewController {
     stackView.addArrangedSubview(button2)
 
     let button3 = UIButton(primaryAction: UIAction(title: "Onboarding Third", handler: { _ in
-      self.openDeeplink(path: "onboading/third", arguments: 1992)
+      self.openDeeplink(path: "onboading/third", arguments: 1_992)
     }))
     stackView.addArrangedSubview(button3)
   }

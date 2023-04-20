@@ -7,15 +7,15 @@
 
 import Foundation
 
-enum BundleInfoDictionary: String {
+public enum BundleInfoDictionary: String {
   case keyCFBundleURLTypes = "CFBundleURLTypes"
   case keyCFBundleURLSchemes = "CFBundleURLSchemes"
 }
 
-class BundleUtilities {
-  static var bundleMainInfoDictionary: [String: Any]? = Bundle.main.infoDictionary
+public class BundleUtilities {
+  public static var bundleMainInfoDictionary: [String: Any]? = Bundle.main.infoDictionary
 
-  static func externalURLSchemes() -> [String] {
+  public static func externalURLSchemes() -> [String] {
     guard let urlTypes = bundleMainInfoDictionary?["CFBundleURLTypes"] as? [[String: Any]] else {
       return []
     }

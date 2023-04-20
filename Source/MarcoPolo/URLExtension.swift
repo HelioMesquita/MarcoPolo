@@ -11,7 +11,10 @@ extension URL {
   func pages() -> [String] {
     var urlComponents = URLComponents(url: self, resolvingAgainstBaseURL: false)
     urlComponents?.queryItems = []
-    urlComponents?.scheme = nil
+    let scheme = urlComponents?.scheme ?? ""
+    if scheme.contains("http") {
+      urlComponents?.scheme = nil
+    }
 
     var urlString = urlComponents?.url?.absoluteString ?? ""
     urlString.removeAll(where: { $0 == "?" })

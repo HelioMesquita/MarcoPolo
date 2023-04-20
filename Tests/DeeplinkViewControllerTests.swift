@@ -19,13 +19,6 @@ class DeeplinkViewControllerTests: XCTestCase {
     XCTAssertFalse(sut.canOpenURL(url))
   }
 
-  func testOpenDeeplink() {
-    let vc = sut.init()
-    vc.openDeeplink(path: "anything", arguments: "testing argument")
-    XCTAssert(XCTestCase.customApplication.hasCalledOpen)
-    XCTAssertEqual(XCTestCase.customApplication.arguments as! String, "testing argument")
-  }
-
   func testArguments() {
     let vc = sut.init()
     vc.arguments = "testing argument saving"

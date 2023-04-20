@@ -8,7 +8,7 @@
 import MarcoPolo
 import UIKit
 
-class OnboardingSecondViewController: BaseViewController, DeeplinkViewController {
+class OnboardingSecondViewController: BaseViewController, DeeplinkViewController, DeeplinkOpener {
   typealias DeeplinkParameterReceiveType = String
 
   static var path: String = "onboading/second"
@@ -23,5 +23,10 @@ class OnboardingSecondViewController: BaseViewController, DeeplinkViewController
     let label2 = UILabel()
     label2.text = arguments
     stackView.addArrangedSubview(label2)
+
+      let button2 = UIButton(primaryAction: UIAction(title: "Next Onboarding Screen", handler: { _ in
+        self.openDeeplink(path: "onboading/third", arguments: "middle screen")
+      }))
+      stackView.addArrangedSubview(button2)
   }
 }

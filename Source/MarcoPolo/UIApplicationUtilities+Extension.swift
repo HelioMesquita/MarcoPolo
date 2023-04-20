@@ -28,8 +28,8 @@ extension UIApplication: UIApplicationProtocol {
   }
 }
 
-class UIApplicationUtilities {
-  static var application: UIApplicationProtocol = UIApplication.shared
+public class UIApplicationUtilities {
+  public static var application: UIApplicationProtocol = UIApplication.shared
 
   static func open(_ url: URL, with arguments: Any?) {
     application.open(url, with: arguments)
