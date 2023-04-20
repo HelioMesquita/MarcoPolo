@@ -1,15 +1,13 @@
-<p align="center">
 [![Swift Version][swift-image]][swift-url]
 [![License][license-image]][license-url]
 [![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)
 [![CocoaPods Compatible](https://img.shields.io/badge/Cocoapods-compatible-orange?style=flat-square)](https://img.shields.io/badge/Cocoapods-compatible-orange?style=flat-square)  
-</p>
 
 # MarcoPolo
 <br />
 <p align="center">
   <a href="https://github.com/HelioMesquita/MarcoPolo/blob/main/images/marcopolo.png">
-  <img src="https://github.com/HelioMesquita/MarcoPolo/blob/main/images/marcopolo.png?raw=true" alt="Swiftmazing Logo" width="200" height="200">
+  <img src="https://github.com/HelioMesquita/MarcoPolo/blob/main/images/marcopolo.png?raw=true" alt="Swiftmazing Logo" width="250" height="250">
   </a>
   <p align="center">
     MarcoPolo combines coordinator and internal deep linking in a unique solution.
@@ -48,6 +46,11 @@ platform :ios, '10.0'
 use_frameworks!
 pod 'MarcoPolo'
 ```
+
+#### Swift Package Manager
+dependencies: [
+    .package(url: "https://github.com/HelioMesquita/MarcoPolo/.git", .branch("main"))
+]
 
 ## How to use
 
