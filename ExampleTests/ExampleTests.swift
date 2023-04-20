@@ -24,8 +24,8 @@ final class ExampleTests: XCTestCase {
       }
     }
 
-    static private let customApplication = MockUIApplication()
-    static private let urlSchemes: [[String: Any]] = [["CFBundleURLName": "com.helio.testApplication",
+    private static let customApplication = MockUIApplication()
+    private static let urlSchemes: [[String: Any]] = [["CFBundleURLName": "com.helio.testApplication",
                                               "CFBundleTypeRole": "Editor",
                                               "CFBundleURLSchemes": ["testeApplication"]]]
 
