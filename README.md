@@ -54,7 +54,7 @@ Before you starting using MarcoPolo you must configure some URLScheme to allow t
 First follow those steps in image. You can choose the name that you want.
 
 <a href="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*2wMikUaE4EEZFr3MABGaiQ.png">
-  <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*2wMikUaE4EEZFr3MABGaiQ.png" alt="Swiftmazing Logo" width="400" height="400">
+  <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*2wMikUaE4EEZFr3MABGaiQ.png" alt="Swiftmazing Logo">
   </a>
 
 After configuring the deep-linking, you must create the main/principal coordinator to hold all features and implement it in your app delegate or scene delegate.
