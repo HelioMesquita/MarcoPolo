@@ -120,7 +120,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     if coordinator.canOpenURL(firstUrl) {
       coordinator.handleURL(firstUrl, arguments: UIApplication.shared.arguments)
     } else {
-      os_log("Not found deeplink", log: OSLog.default, type: .error)
+      os_log("Deeplink not found", log: OSLog.default, type: .error)
     }
   }
 
@@ -164,7 +164,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       coordinator.handleURL(url, arguments: UIApplication.shared.arguments)
       return true
     } else {
-      os_log("Not found deeplink", log: OSLog.default, type: .error)
+      os_log("Deeplink not found", log: OSLog.default, type: .error)
       return false
     }
 }
