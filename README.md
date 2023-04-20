@@ -10,7 +10,7 @@
   <img src="https://github.com/HelioMesquita/MarcoPolo/blob/main/images/marcopolo.png?raw=true" alt="Swiftmazing Logo" width="250" height="250">
   </a>
   <p align="center">
-    MarcoPolo combines coordinator and internal deep linking in a unique solution.
+    MarcoPolo is a library that combines coordinator and internal deep linking in a unique and simple solution.
   </p>
 </p>
 
